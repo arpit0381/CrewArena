@@ -35,7 +35,7 @@ export default function LandingPage() {
             <Maximize2 className="text-black stroke-[3px]" size={18} />
           </div>
           <span className="font-display text-lg font-bold tracking-widest uppercase text-text-primary">
-            ArenaForge
+            Crew Arena
           </span>
         </div>
 
@@ -129,7 +129,7 @@ export default function LandingPage() {
 
       {/* Footer */}
       <footer className="border-t border-border/40 py-6 text-center text-xs text-text-secondary/50 max-w-7xl w-full mx-auto px-6">
-        ArenaForge Engine V1.pair-programmed by Antigravity.
+        Crew Arena Engine V1.pair-programmed by Antigravity.
       </footer>
 
       {/* Notification bot simulator */}

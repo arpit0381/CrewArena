@@ -83,10 +83,10 @@ export default function TelegramSimulator() {
           <div className="p-4 bg-slate-900 border-b border-border flex items-center justify-between">
             <div className="flex items-center gap-2">
               <div className="w-8 h-8 rounded-full bg-accent/20 flex items-center justify-center border border-accent/40">
-                <span className="text-accent text-xs font-bold font-display">AF</span>
+                <span className="text-accent text-xs font-bold font-display">CA</span>
               </div>
               <div>
-                <h4 className="text-sm font-bold text-text-primary">ArenaForge Bot Simulator</h4>
+                <h4 className="text-sm font-bold text-text-primary">Crew Arena Bot Simulator</h4>
                 <p className="text-[10px] text-accent flex items-center gap-1">
                   <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
                   Active Webhook

@@ -1,5 +1,5 @@
 -- ==========================================
--- ARENAFORGE DATABASE SCHEMA (SUPABASE POSTGRESQL)
+-- CREW ARENA DATABASE SCHEMA (SUPABASE POSTGRESQL)
 -- ==========================================
 
 -- 1. GAMES ENGINE TABLE

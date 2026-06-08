@@ -236,7 +236,7 @@ export default function RegistrationFlow({ tournament, isOpen, onClose, onSucces
                 <div className="space-y-2 flex-1 text-center sm:text-left">
                   <span className="text-[10px] font-bold text-text-secondary uppercase block">UPI Payment Address</span>
                   <span className="text-xs font-mono font-bold text-accent select-all block bg-black/60 px-2 py-1 rounded border border-border/60">
-                    arenaforge@upi
+                    crewarena@upi
                   </span>
                   <p className="text-[9px] text-text-secondary/70 leading-relaxed">
                     Upload a receipt screenshot and copy your UTR number (Unique Transaction Reference) below.

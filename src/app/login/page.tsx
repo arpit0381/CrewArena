@@ -9,7 +9,7 @@ import { supabase } from "@/lib/supabase/client";
 
 export default function LoginPage() {
   const router = useRouter();
-  const [email, setEmail] = useState("captain@arenaforge.com");
+  const [email, setEmail] = useState("captain@crewarena.com");
   const [password, setPassword] = useState("password123");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
@@ -69,7 +69,7 @@ export default function LoginPage() {
             <Maximize2 className="text-black stroke-[3px]" size={20} />
           </div>
           <span className="font-display text-xl font-bold tracking-widest uppercase">
-            ArenaForge
+            Crew Arena
           </span>
         </div>
 
@@ -88,7 +88,7 @@ export default function LoginPage() {
 
         {/* Footer info */}
         <div className="z-10 text-xs text-text-secondary/50">
-          © {new Date().getFullYear()} ArenaForge. Built for Champions.
+          © {new Date().getFullYear()} Crew Arena. Built for Champions.
         </div>
       </div>
 
@@ -124,7 +124,7 @@ export default function LoginPage() {
                 <input
                   type="email"
                   required
-                  placeholder="e.g. captain@arenaforge.com"
+                  placeholder="e.g. captain@crewarena.com"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className="w-full bg-surface border border-border rounded-xl pl-10 pr-4 py-3 text-xs focus:outline-none focus:border-accent text-text-primary transition-colors"

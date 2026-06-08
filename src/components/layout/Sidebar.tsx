@@ -45,7 +45,7 @@ export default function Sidebar({ userRole }: SidebarProps) {
         </div>
         <div className="flex flex-col">
           <span className="font-display text-lg font-bold tracking-wider text-text-primary uppercase">
-            ArenaForge
+            Crew Arena
           </span>
           <span className="text-[9px] font-bold text-accent uppercase tracking-widest leading-none">
             MVP Engine V1

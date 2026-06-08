@@ -1,6 +1,6 @@
 # 🎮 ESPORTS TOURNAMENT MANAGEMENT PLATFORM — MASTER BUILD PROMPT
 
-> **Project Codename:** `ArenaForge`
+> **Project Codename:** `Crew Arena`
 > **Version:** MVP V1
 > **Stack:** Next.js 15 · TypeScript · Tailwind CSS · Shadcn UI · Supabase · Telegraf.js · Vercel
 
@@ -8,7 +8,7 @@
 
 ## 🧭 PROJECT OVERVIEW
 
-Build a **fully automated, game-driven esports tournament management platform** called **ArenaForge**. The core philosophy: *the admin should never manually calculate groups, qualifiers, finalists, points, or room distribution.* The system auto-configures everything based on the selected game.
+Build a **fully automated, game-driven esports tournament management platform** called **Crew Arena**. The core philosophy: *the admin should never manually calculate groups, qualifiers, finalists, points, or room distribution.* The system auto-configures everything based on the selected game.
 
 The platform supports: **Free Fire, BGMI, Valorant, CS2, COD Mobile, PUBG PC** — and is architected to support any future game without rewriting logic.
 
@@ -756,7 +756,7 @@ src/
 **Deep link flow for account linking:**
 ```
 User clicks "Connect Telegram" on web →
-Redirects to t.me/ArenaForgeBot?start=link_[user_uuid] →
+Redirects to t.me/CrewArenaBot?start=link_[user_uuid] →
 Bot receives /start link_[uuid] →
 Bot messages: "Tap to confirm linking your account" [Confirm Button] →
 On confirm: updates profiles.telegram_id = chat.id →
@@ -842,4 +842,4 @@ Build in this order:
 
 ---
 
-*ArenaForge — Where Champions Are Made Automatically* 🏆
+*Crew Arena — Where Champions Are Made Automatically* 🏆

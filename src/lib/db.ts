@@ -73,7 +73,7 @@ export class LocalDatabase {
     this.results = this.getItem("results", []);
     this.standings = this.getItem("standings", []);
     this.notificationLogs = this.getItem("notification_logs", []);
-    this.currentUserId = localStorage.getItem("arenaforge-supabase-current-user-id") || "";
+    this.currentUserId = localStorage.getItem("crewarena-supabase-current-user-id") || "";
   }
 
   // Save to localStorage cache
@@ -91,12 +91,12 @@ export class LocalDatabase {
     this.setItem("results", this.results);
     this.setItem("standings", this.standings);
     this.setItem("notification_logs", this.notificationLogs);
-    localStorage.setItem("arenaforge-supabase-current-user-id", this.currentUserId);
+    localStorage.setItem("crewarena-supabase-current-user-id", this.currentUserId);
   }
 
   private getItem<T>(key: string, fallback: T): T {
     try {
-      const data = localStorage.getItem(`arenaforge-supabase-${key}`);
+      const data = localStorage.getItem(`crewarena-supabase-${key}`);
       return data ? JSON.parse(data) : fallback;
     } catch {
       return fallback;
@@ -104,7 +104,7 @@ export class LocalDatabase {
   }
 
   private setItem(key: string, val: any) {
-    localStorage.setItem(`arenaforge-supabase-${key}`, JSON.stringify(val));
+    localStorage.setItem(`crewarena-supabase-${key}`, JSON.stringify(val));
   }
 
   // Supabase Sync Pull Handler

@@ -30,7 +30,7 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "ArenaForge — Esports Tournament Platform",
+  title: "Crew Arena — Esports Tournament Platform",
   description: "Fully automated, game-driven esports tournament management platform. Join tournaments, track stats, and win tournaments automatically.",
   keywords: ["esports", "tournament manager", "Free Fire", "BGMI", "Valorant", "gaming platform"],
 };

@@ -126,7 +126,7 @@ export default function RegisterPage() {
             <Maximize2 className="text-black stroke-[3px]" size={20} />
           </div>
           <span className="font-display text-xl font-bold tracking-widest uppercase">
-            ArenaForge
+            Crew Arena
           </span>
         </div>
 
@@ -143,7 +143,7 @@ export default function RegisterPage() {
         </div>
 
         <div className="z-10 text-xs text-text-secondary/50">
-          © {new Date().getFullYear()} ArenaForge. Built for Champions.
+          © {new Date().getFullYear()} Crew Arena. Built for Champions.
         </div>
       </div>
 

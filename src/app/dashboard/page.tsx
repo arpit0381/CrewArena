@@ -545,7 +545,7 @@ export default function Dashboard() {
                     Link your Telegram to get immediate notifications for match custom rooms, results, and qualifier alerts.
                   </p>
                   <a
-                    href="https://t.me/ArenaForgeBot?start=VERIFY123"
+                    href="https://t.me/CrewArenaBot?start=VERIFY123"
                     target="_blank"
                     rel="noreferrer"
                     className="w-full bg-accent hover:bg-accent-hover text-black p-2.5 rounded-xl text-xs font-bold uppercase flex items-center justify-center gap-2 hover:scale-[1.01] transition"

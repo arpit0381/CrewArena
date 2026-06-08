@@ -1,6 +1,6 @@
-# 🏆 ArenaForge
+# 🏆 Crew Arena
 
-ArenaForge is a premium, automated, game-driven esports tournament management and matchmaking platform. Designed for modern competitive gaming communities, it automates the entire tournament lifecycle—from registration, verification, bracket generation, and real-time standings calculations, to Telegram-based lobby dispatch and winner awards.
+Crew Arena is a premium, automated, game-driven esports tournament management and matchmaking platform. Designed for modern competitive gaming communities, it automates the entire tournament lifecycle—from registration, verification, bracket generation, and real-time standings calculations, to Telegram-based lobby dispatch and winner awards.
 
 It is built with **Next.js 16 (Turbopack)**, **React 19**, **TypeScript**, **Tailwind CSS**, **Framer Motion**, and **Recharts**, with a hybrid database layer powered by **Supabase PostgreSQL** and a robust client-side fallback cache.
 
@@ -93,8 +93,8 @@ It is built with **Next.js 16 (Turbopack)**, **React 19**, **TypeScript**, **Tai
 
 ### 1. Clone & Install Dependencies
 ```bash
-git clone https://github.com/arpit0381/ArenaForge.git
-cd ArenaForge
+git clone https://github.com/arpit0381/CrewArena.git
+cd CrewArena
 npm install
 ```
 
@@ -111,7 +111,7 @@ TELEGRAM_BOT_TOKEN=your-telegram-bot-token
 TELEGRAM_BOT_USERNAME=your-bot-username
 NEXT_PUBLIC_APP_URL=http://localhost:3000
 ```
-> **Self-Healing Local Mode:** If `NEXT_PUBLIC_SUPABASE_URL` is left blank, ArenaForge will automatically run in high-fidelity mock mode using browser LocalStorage, allowing you to try the full application offline.
+> **Self-Healing Local Mode:** If `NEXT_PUBLIC_SUPABASE_URL` is left blank, Crew Arena will automatically run in high-fidelity mock mode using browser LocalStorage, allowing you to try the full application offline.
 
 ### 3. Setup Supabase Database Schema
 If connecting to a live Supabase instance:
