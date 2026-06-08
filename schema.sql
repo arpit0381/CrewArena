@@ -154,3 +154,20 @@ VALUES
   ('bf81850d-d421-4ea9-a111-ce1515bb5c81', 'Free Fire', 'free-fire', 10, 12, 'points', '{"1":12, "2":9, "3":8, "4":7, "5":6, "6":5, "7":4, "8":3, "9":2, "10":1, "kill":1}'),
   ('e12bd84d-2df9-4c12-841f-1ad078d10b72', 'BGMI', 'bgmi', 25, 16, 'points', '{"1":15, "2":12, "3":10, "4":8, "5":6, "6":4, "7":2, "8":1, "kill":1}'),
   ('c26be6fd-1d88-43e5-8b83-a9d02f5a5423', 'Valorant', 'valorant', 2, 2, 'bracket', '{"1":1, "2":0, "kill":0}');
+
+-- ==========================================
+-- RLS DISABLE FOR MVP / DEVELOPMENT TABLES
+-- ==========================================
+-- Supabase enables RLS by default. To allow the frontend application to perform inserts
+-- and updates directly, execute these queries in your Supabase SQL Editor:
+ALTER TABLE games DISABLE ROW LEVEL SECURITY;
+ALTER TABLE teams DISABLE ROW LEVEL SECURITY;
+ALTER TABLE team_members DISABLE ROW LEVEL SECURITY;
+ALTER TABLE tournaments DISABLE ROW LEVEL SECURITY;
+ALTER TABLE registrations DISABLE ROW LEVEL SECURITY;
+ALTER TABLE payments DISABLE ROW LEVEL SECURITY;
+ALTER TABLE matches DISABLE ROW LEVEL SECURITY;
+ALTER TABLE room_assignments DISABLE ROW LEVEL SECURITY;
+ALTER TABLE results DISABLE ROW LEVEL SECURITY;
+ALTER TABLE notifications DISABLE ROW LEVEL SECURITY;
+
