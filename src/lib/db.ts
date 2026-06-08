@@ -170,7 +170,29 @@ export class LocalDatabase {
       const resultsData = resultsRes.data;
       const notificationsData = notificationsRes.data;
 
-      if (gamesData && gamesData.length > 0) this.games = gamesData;
+      const defaultGames: Game[] = [
+        { id: "bf81850d-d421-4ea9-a111-ce1515bb5c81", name: "Free Fire", slug: "free-fire", teams_per_room: 10, finalists: 12, qualification: "points" as const, points_config: { "1": 12, "2": 9, "3": 8, "4": 7, "5": 6, "6": 5, "7": 4, "8": 3, "9": 2, "10": 1, "kill": 1 }, created_at: new Date().toISOString() },
+        { id: "e12bd84d-2df9-4c12-841f-1ad078d10b72", name: "BGMI", slug: "bgmi", teams_per_room: 25, finalists: 16, qualification: "points" as const, points_config: { "1": 15, "2": 12, "3": 10, "4": 8, "5": 6, "6": 4, "7": 2, "8": 1, "kill": 1 }, created_at: new Date().toISOString() },
+        { id: "c26be6fd-1d88-43e5-8b83-a9d02f5a5423", name: "Valorant", slug: "valorant", teams_per_room: 2, finalists: 2, qualification: "bracket" as const, points_config: { "1": 1, "2": 0, "kill": 0 }, created_at: new Date().toISOString() },
+        { id: "d37cf7fe-2e99-4d23-9c94-b0d03f5a5424", name: "COD Mobile", slug: "cod-mobile", teams_per_room: 10, finalists: 12, qualification: "points" as const, points_config: { "1": 15, "2": 12, "3": 10, "4": 8, "5": 6, "6": 4, "7": 2, "8": 1, "kill": 1 }, created_at: new Date().toISOString() },
+        { id: "e48df8ff-3fa0-4e34-ad05-c1d04f5a5425", name: "PUBG PC", slug: "pubg-pc", teams_per_room: 16, finalists: 16, qualification: "points" as const, points_config: { "1": 10, "2": 6, "3": 5, "4": 4, "5": 3, "6": 2, "7": 1, "8": 1, "kill": 1 }, created_at: new Date().toISOString() },
+        { id: "f59ef900-4fb1-4f45-be16-d2e05f5a5426", name: "CS2", slug: "cs2", teams_per_room: 2, finalists: 2, qualification: "bracket" as const, points_config: { "1": 1, "2": 0, "kill": 0 }, created_at: new Date().toISOString() }
+      ];
+
+      if (gamesData) {
+        const existingIds = gamesData.map(g => g.id);
+        const missingGames = defaultGames.filter(dg => !existingIds.includes(dg.id));
+        if (missingGames.length > 0) {
+          for (const mg of missingGames) {
+            this.dbWrite("games", "insert", mg);
+          }
+          this.games = [...gamesData, ...missingGames];
+        } else {
+          this.games = gamesData;
+        }
+      } else {
+        this.games = defaultGames;
+      }
       if (profilesData) this.profiles = profilesData;
       if (teamsData) this.teams = teamsData;
       if (membersData) this.teamMembers = membersData;

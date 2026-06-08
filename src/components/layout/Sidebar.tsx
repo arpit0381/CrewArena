@@ -41,8 +41,8 @@ export default function Sidebar({ userRole }: SidebarProps) {
     <aside className="hidden md:flex flex-col w-64 bg-surface border-r border-border shrink-0">
       {/* Brand logo */}
       <div className="p-6 border-b border-border flex items-center gap-3">
-        <div className="w-9 h-9 rounded-lg bg-gradient-to-tr from-accent to-purple-600 flex items-center justify-center shadow-[0_0_15px_rgba(var(--accent-rgb),0.25)]">
-          <Maximize2 className="text-black stroke-[3px]" size={18} />
+        <div className="w-9 h-9 rounded-lg overflow-hidden border border-accent/20 flex items-center justify-center shadow-[0_0_15px_rgba(var(--accent-rgb),0.25)] bg-background">
+          <img src="/logo.png" alt="Crew Arena Logo" className="w-full h-full object-cover" />
         </div>
         <div className="flex flex-col">
           <span className="font-display text-lg font-bold tracking-wider text-text-primary uppercase">

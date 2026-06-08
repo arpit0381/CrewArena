@@ -31,8 +31,8 @@ export default function LandingPage() {
       {/* Header / Nav */}
       <header className="max-w-7xl w-full mx-auto px-6 h-20 flex items-center justify-between border-b border-border/40">
         <div className="flex items-center gap-3">
-          <div className="w-9 h-9 rounded-lg bg-gradient-to-tr from-accent to-purple-600 flex items-center justify-center shadow-[0_0_15px_rgba(var(--accent-rgb),0.2)]">
-            <Maximize2 className="text-black stroke-[3px]" size={18} />
+          <div className="w-9 h-9 rounded-lg overflow-hidden border border-accent/20 flex items-center justify-center shadow-[0_0_15px_rgba(var(--accent-rgb),0.2)] bg-background">
+            <img src="/logo.png" alt="Crew Arena Logo" className="w-full h-full object-cover" />
           </div>
           <span className="font-display text-lg font-bold tracking-widest uppercase text-text-primary">
             Crew Arena
